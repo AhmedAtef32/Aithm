@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aithem</title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
   <!-- bootstrap link css  -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- main link css  -->
@@ -16,19 +23,68 @@
 <body>
 
 
+<!-- start nav bar  -->
+
+<nav></nav>
+
+<!-- end nav bar  -->
+
+
+
+  <!-- start hero section  -->
+  <section class="hero-section">
+    <div class="container">
+
+      <header class="text-center">
+        <p class="head-of-every-section DM_Sans_font"><span class="position-relative">Aithm Image Generator</span></p>
+      </header>
+      <h1 class="text-center Plus_Jakarta_font">Create beautiful art with <br><span id="element"></span></h1>
+
+      <div class="Generate d-flex justify-content-center mt-5">
+        <div class="Generate-input-container">
+          <input class="Generate-input rounded-2"  type="text" placeholder="Write your prompt and get you best ai artwork!">
+          <button class="Generate-button rounded-2">Generate</button>
+        </div>
+      </div>
+
+      <div class="Quick Try pt-5">
+        <ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap gy-3">
+          <li class="text-white mt-3 mt-md-0 me-2">Quick Try :</li>
+          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#" class="text-decoration-none text-white">Creative</a></li>
+          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#" class="text-decoration-none text-white">Sport</a></li>
+          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#" class="text-decoration-none text-white">Animation</a></li>
+          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#" class="text-decoration-none text-white">Fantasy</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- start hero section  -->
 
 
 
 
 
-  
 
 
-  
+
   <!-- bootstrap link js -->
   <script type="module" src="js/bootstrap.bundle.min.js"></script>
   <!-- main link js -->
   <script src="js/main.js"></script>
+  <!-- typing animation  -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!--start Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Artificial Intelligence'],
+      typeSpeed: 100,
+      backDelay: 2000,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+  <!--end Setup and start animation! -->
+
 
 </body>
 

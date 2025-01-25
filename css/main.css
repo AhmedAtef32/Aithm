@@ -1,1 +1,140 @@
-@import '@splidejs/splide/css';
+/* start global styles */
+body{
+    background-color: #05051E;
+    font-family: "DM Sans", serif;
+
+}
+.DM_Sans_font{
+    font-family: "DM Sans", serif;
+}
+.Plus_Jakarta_font{
+    font-family: "Plus Jakarta Sans", serif;
+}  
+
+.head-of-every-section{
+  
+    /* <p class="head-of-every-section DM_Sans_font"><span class="position-relative">Aithm Image Generator</span></p> */
+
+    span{
+      background: linear-gradient(94deg, #43A5FE 21.18%, #0064C1 104.4%);    font-size: 1.125rem;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight:500;
+      margin-bottom: 50px;
+  
+      &::after{
+        content: "";
+        width: 2px;
+        height: 14px;
+        position: absolute;
+        background-color: #fff;
+        left: -9px;
+        top: 4px;
+      }
+  
+    }
+  }
+
+/* end global styles */
+
+
+/* start hero section */
+.hero-section{
+ background-image: url('../imgs/background-main.png');
+ background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 160px;
+    min-height: 70vh;
+}
+
+h1{
+ font-weight: 800;
+ font-size: 30px;
+ color: white;
+ line-height: 5.625rem;
+
+ span{
+    background: linear-gradient(94deg, #43A5FE 21.18%, #0064C1 104.4%);
+    background-clip: text;
+    font-size: 30px;
+    -webkit-text-fill-color: transparent;
+ }
+
+
+ 
+}
+
+.Generate-input-container{
+    width: 100%;
+
+    .Generate-input{
+        padding: 20px 12px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(15px);
+        border-radius: 5px;
+        color: white;
+        width: 100%;
+        border: 0;
+        &:focus{
+            outline: none;
+        }
+}
+.Generate-button{
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100%;
+    background: var(--gridColor);
+    color: var(--whiteColor);
+    border: none;
+    background: linear-gradient(94deg, #43A5FE 21.18%, #0064C1 104.4%);
+    color: white;
+    &:active{
+        border: none;
+    }
+}
+
+ }
+
+
+.Quick_Try_list{
+    background: #ffffff17;
+    transition: 0.5s all ease;
+}
+.Quick_Try_list:hover{
+    background: linear-gradient(94deg, #43A5FE 21.18%, #0064C1 104.4%);
+}
+
+
+
+
+ @media screen and (min-width: 768px){
+
+       
+       h1{
+        font-size: 4.6875rem;
+        span{
+           font-size: 4.6875rem;
+        }
+       
+    }
+        
+
+    .Generate-input-container{
+        width: 70%;
+    position: relative;
+
+    .Generate-button{
+        width: 25%;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+     }
+ }
+
+/* start hero section */
