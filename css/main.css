@@ -71,6 +71,11 @@ body{
 
 
 /* start nav bar  */
+nav.navbar{
+    backdrop-filter: blur(10px);
+    background-color: rgba(5, 5, 30, 0.43) !important;
+    border-bottom: 1px solid #1A243D;
+}
 
 .navbar-brand{
     font-size: 1.875rem;
