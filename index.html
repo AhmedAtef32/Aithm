@@ -23,11 +23,95 @@
 <body>
 
 
-<!-- start nav bar  -->
+  <!-- start nav bar  -->
 
-<nav></nav>
+  <nav class="navbar navbar-expand-lg navbar-dark py-4 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">AITHM</a>
 
-<!-- end nav bar  -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#"><span class="position-relative translate-middle">Home </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><span class="position-relative translate-middle">AboutUS</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><span class="position-relative translate-middle">Portfolio</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><span class="position-relative translate-middle">Services</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><span class="position-relative translate-middle">pages</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><span class="position-relative translate-middle">Blogs</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><span class="position-relative translate-middle">Contact</span></a>
+          </li>
+
+  
+        </ul>
+
+
+        
+      </div>
+      <div class="nav-icons d-flex align-items-center">
+
+        <div class="nav-shoping d-flex align-items-center position-relative ">
+          <a class="mx-2" href="#"><i class="fa-solid fa-bag-shopping text-white"></i> </a>
+          <span class="text-white bag-shopping position-absolute d-flex justify-content-center align-items-center">0</span>
+        </div>
+
+        <a class="mx-2" href="#"> <i class="fa-solid fa-magnifying-glass text-white  "></i></a>
+        <button class="nav-Generate-button navv mx-3 position-relative border-0 text-white w-100 overflow-hidden">Generate
+          <i class="fa-solid fa-chevron-right position-absolute translate-middle"></i></button>
+          <div class="bars mx-2  ">
+            <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header d-flex justify-content-between mt-2 ">
+      <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">AITHM</h5>
+      <button type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled pb-3">
+        <li class="mt-4 d-flex justify-content-between"><a class="offcanvas-links text-decoration-none  active" href="#">Home </a> <i class="fa-solid fa-chevron-right text-white"></i></li>
+        <li class="mt-4 d-flex justify-content-between"><a class="offcanvas-links text-decoration-none " href="#">AboutUS </a> <i class="fa-solid fa-chevron-right text-white"></i></li>
+        <li class="mt-4 d-flex justify-content-between"><a class="offcanvas-links text-decoration-none " href="#">Portfolio </a> <i class="fa-solid fa-chevron-right text-white"></i></li>
+        <li class="mt-4 d-flex justify-content-between"><a class="offcanvas-links text-decoration-none " href="#">Services </a> <i class="fa-solid fa-chevron-right text-white"></i></li>
+        <li class="mt-4 d-flex justify-content-between"><a class="offcanvas-links text-decoration-none " href="#">pages </a> <i class="fa-solid fa-chevron-right text-white"></i></li>
+        <li class="mt-4 d-flex justify-content-between"><a class="offcanvas-links text-decoration-none " href="#">Blogs </a> <i class="fa-solid fa-chevron-right text-white"></i></li>
+        <li class="mt-4 d-flex justify-content-between"><a class="offcanvas-links text-decoration-none " href="#">Contact </a> <i class="fa-solid fa-chevron-right text-white"></i></li>
+      </ul>
+
+      <div class="follow-on">
+        <p class="text-white Plus_Jakarta_font">Follow on</p>
+        <div class="follow-on-icons d-flex"> 
+          <a class="mx-2" href="#"><i class="fa-brands fa-facebook-f text-white"></i></a>
+          <a class="mx-2" href="#"><i class="fa-brands fa-twitter text-white"></i></a>
+          <a class="mx-2" href="#"><i class="fa-brands fa-instagram text-white"></i></a>
+          <a class="mx-2" href="#"><i class="fa-brands fa-linkedin-in text-white"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- end nav bar  -->
 
 
 
@@ -40,20 +124,25 @@
       </header>
       <h1 class="text-center Plus_Jakarta_font">Create beautiful art with <br><span id="element"></span></h1>
 
-      <div class="Generate d-flex justify-content-center mt-5">
+      <div class="Generate d-flex justify-content-center mt-2">
         <div class="Generate-input-container">
-          <input class="Generate-input rounded-2"  type="text" placeholder="Write your prompt and get you best ai artwork!">
+          <input class="Generate-input rounded-2" type="text"
+            placeholder="Write your prompt and get you best ai artwork!">
           <button class="Generate-button rounded-2">Generate</button>
         </div>
       </div>
 
-      <div class="Quick Try pt-5">
+      <div class="Quick Try pt-3">
         <ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap gy-3">
           <li class="text-white mt-3 mt-md-0 me-2">Quick Try :</li>
-          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#" class="text-decoration-none text-white">Creative</a></li>
-          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#" class="text-decoration-none text-white">Sport</a></li>
-          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#" class="text-decoration-none text-white">Animation</a></li>
-          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#" class="text-decoration-none text-white">Fantasy</a></li>
+          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#"
+              class="text-decoration-none text-white">Creative</a></li>
+          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#"
+              class="text-decoration-none text-white">Sport</a></li>
+          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#"
+              class="text-decoration-none text-white">Animation</a></li>
+          <li class="Quick_Try_list py-2 px-3 mx-2 Plus_Jakarta_font mt-3 mt-md-0  rounded-1"><a href="#"
+              class="text-decoration-none text-white">Fantasy</a></li>
         </ul>
       </div>
     </div>

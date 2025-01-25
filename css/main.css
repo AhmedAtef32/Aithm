@@ -35,7 +35,158 @@ body{
     }
   }
 
+
+  .nav-Generate-button{
+
+
+
+    /* <button class="nav-Generate-button position-relative border-0 text-white w-100 overflow-hidden">Generate <i class="fa-solid fa-chevron-right position-absolute translate-middle"></i></button> */
+
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-weight: 500;
+    background: linear-gradient(94deg, #43A5FE 21.18%, #0064C1 104.4%);
+    transition: 0.4s all ease;
+    i{
+        top: 51%;
+        right: -20px;
+         transition: 0.4s all ease;
+    }
+
+    &:hover{
+        padding: 10px 15px;
+        i{
+            right: -1px;
+        }
+    }
+}
+
+
+
+
+
+
 /* end global styles */
+
+
+/* start nav bar  */
+
+.navbar-brand{
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 1.875rem;
+}
+
+a.nav-link{
+ font-size: 1.0625rem;
+ font-weight: 500;
+ line-height: 1.625rem;
+}
+
+.nav-icons a{
+    font-size: 30px;
+   
+}
+a.nav-link span::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: #43A5FE;
+    left: 0;
+    top:105%;
+    transition: 0.8s width ease;
+}
+a.nav-link:hover span::after{
+    width: 100%;
+}
+a.nav-link.active span::after{
+    width: 100%;
+}
+.bag-shopping{
+   
+    background: linear-gradient(94deg, #43A5FE 21.18%, #0064C1 104.4%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+.navv.nav-Generate-button{
+    display: none;
+}
+
+.bars i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.offcanvas {
+    background-color: #05051E;
+}
+
+.close{
+    color: white;
+    background-color: transparent;
+    border: none;
+    i{
+        font-size: 1.50rem;
+    }
+}
+
+.offcanvas-header{
+    border-bottom: 1px solid #ffffff17;
+}
+.offcanvas-body > ul {
+    border-bottom: 1px solid #ffffff17;
+
+}
+.offcanvas-links.active{
+    color: #0064C1;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.offcanvas-links{
+    color: white;
+    transition: 0.5s color ease;
+}
+.offcanvas-links:hover{
+    color: #0064C1;
+}
+
+.follow-on > p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.8125rem;
+    color: white;
+}
+
+@media screen and (min-width: 992px){
+    .navv.nav-Generate-button{
+        display: block;
+    }
+    .bars{
+        display: none;
+    }
+}
+
+
+/* end nav bar  */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* start hero section */
@@ -44,7 +195,8 @@ body{
  background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 160px;
+    padding-top: 130px;
+    padding-bottom: 20px;
     min-height: 70vh;
 }
 
@@ -111,6 +263,7 @@ h1{
 
 
  @media screen and (min-width: 768px){
+
 
        
        h1{
