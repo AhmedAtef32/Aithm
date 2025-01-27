@@ -72,6 +72,16 @@ body{
 
 /* end global styles */
 
+/* start btn scroll top  */
+.scroll-top{
+    width: 50px;
+    height: 50px;
+    top: 90%;
+    right: 10px;
+    border-radius: 50%;
+    transition: 0.8s opacity ease;
+}
+/* end btn scroll top  */
 
 /* start nav bar  */
 nav.navbar{
@@ -110,7 +120,7 @@ a.nav-link span::after{
 a.nav-link:hover span::after{
     width: 100%;
 }
-a.nav-link.active span::after{
+.active a.nav-link span::after{
     width: 100%;
 }
 .bag-shopping{
