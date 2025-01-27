@@ -3,7 +3,7 @@
 /* start hero section */
 .about-page-sec-one{
     height: 70vh;
-    background-image: url("../../../imgs/section-bg-5.png");
+    background-image: url("../imgs/section-bg-5.png");
     background-size: cover;
     background-position: center;
     padding-block:80px 50px;
