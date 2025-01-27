@@ -58,9 +58,6 @@ document.addEventListener("scroll", function() {
 btnScrollTop.addEventListener("click", function () {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Smooth scrolling
+      behavior: "smooth", 
     });
-
-
-
   });
