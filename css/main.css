@@ -459,3 +459,154 @@ ul li{
     }
 }
 /* end brands-slider section    */
+
+
+/* start team content */
+
+.team-section{
+    background-image: url("../imgs/background-7.png");
+    background-position: center;
+    background-size: cover;
+}
+.header-team-content{
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+.team-title{
+    border-bottom: #b9b9ba9f 1px solid;
+    padding-bottom: 20px;
+}
+.system-team{
+    color: #b9b9ba;
+    font-size: .875rem;
+    font-family: 400;
+}
+.team-text{
+    inset: 0;
+    top: 75%;
+    transition: 0.5s all ease;
+}
+.team-card:hover .team-text{
+    background-color: rgba(0, 0, 0, 0.527);
+    top: 0;
+}
+.team-web{
+    color: #3581C9;
+}
+.team-opsity{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.team-card:hover .team-opsity{
+    opacity: 1;
+}
+/* end team content */
+
+
+
+
+
+/* start Unveil New Creative  */
+.search {
+    inset: 0;
+    text-align: center;
+    background-color: white;
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .search:hover {
+    opacity: 1;
+  }
+  
+  .boh {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .search h4 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Montserrat", serif;
+    transform: translateY(-100%);
+    transition: 0.5s ease all;
+  }
+  .search:hover h4 {
+    transform: translateY(0);
+  }
+  .icon-search {
+    transform: translateY(100%);
+    transition: 0.5s ease all;
+  }
+  .search:hover .icon-search {
+    transform: translateY(0);
+  }
+  
+  
+  
+  .tab-pane.fade.show .ball {
+    transform: scale(0);
+  }
+  .ball {
+    transform: scale(0);
+    transition: 0.5s all ease;
+  }
+  .tab-pane.fade.show.active .ball {
+    transform: scale(1);
+  }
+  
+  
+  #pills-tab .nav-item span::after {
+    content: "";
+    background-color: white;
+    width: 0;
+    height: 2px;
+    left: 0;
+    top: 100%;
+    position: absolute;
+    transition: 0.5s ease all;
+  }
+  #pills-tab .nav-item .nav-link.active span::after {
+    width: 100%;
+  }
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+  }
+  
+  .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    padding: var(--bs-modal-header-padding);
+    border-bottom: none;
+    border-top-left-radius: var(--bs-modal-inner-border-radius);
+    border-top-right-radius: var(--bs-modal-inner-border-radius);
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: transparent;
+  }
+  
+/* end Unveil New Creative  */
+
+/* start new-creative */
+  .new-creative span{
+    font-size: 3.4375rem;
+    font-weight: 800;
+    color: #fff;
+   
+  }
+
+  /* end new-creative */
