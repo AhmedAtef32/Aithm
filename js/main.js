@@ -5,7 +5,7 @@ const sideBarLinks = document.querySelectorAll('.sidebar-link');
 
 // get the current page path
 const currentPage = window.location.pathname;
-
+console.log(currentPage);
 /**
  * remove active class from all nav items
  * add active class to the clicked nav item
@@ -24,7 +24,7 @@ navLinks.forEach(link => {
  });
  navLinks[0].classList.add("active");
  }
- 
+
 /**
  * remove active class from all nav items
  * add active class to the clicked nav item
