@@ -120,7 +120,7 @@ a.nav-link span::after{
 a.nav-link:hover span::after{
     width: 100%;
 }
-.active a.nav-link span::after{
+ a.nav-link.active span::after{
     width: 100%;
 }
 .bag-shopping{

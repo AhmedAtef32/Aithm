@@ -1,19 +1,48 @@
-
 const navbar = document.querySelector('nav.navbar');
-const navItems = document.querySelectorAll('.nav-item');
+const navLinks = document.querySelectorAll('a.nav-link');
 const btnScrollTop = document.querySelector('#ScrollTop');
+const sideBarLinks = document.querySelectorAll('.sidebar-link');
+
+// get the current page path
+const currentPage = window.location.pathname;
+
 /**
  * remove active class from all nav items
  * add active class to the clicked nav item
  */
-for (let i = 0; i < navItems.length; i++) {
-    navItems[i].addEventListener('click', function() {
-        for (let j = 0; j < navItems.length; j++) {
-            navItems[j].classList.remove('active');
-        }
-        navItems[i].classList.add('active');
-    });
-}
+navLinks.forEach(link => {
+    if (link.href.includes(currentPage)) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+
+  if (currentPage === "/") {
+    navLinks.forEach(link => {
+       link.classList.remove("active");
+ });
+ navLinks[0].classList.add("active");
+ }
+ 
+/**
+ * remove active class from all nav items
+ * add active class to the clicked nav item
+ */
+  sideBarLinks.forEach((link)=>{
+ if (link.href.includes(currentPage)) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  })
+  if(currentPage === "/"){
+    sideBarLinks.forEach(link => {
+        link.classList.remove("active");
+  });
+  sideBarLinks[0].classList.add("active");
+  }
+
 
 
 
@@ -26,7 +55,6 @@ for (let i = 0; i < navItems.length; i++) {
 document.addEventListener("scroll", function() {  
     
     const scroll = window.scrollY;
-    console.log(scroll);
 
     if(scroll > 0) {
         navbar.classList.remove('pb-2');
