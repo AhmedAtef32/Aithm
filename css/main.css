@@ -548,10 +548,13 @@ ul li{
   
   .tab-pane.fade.show .ball {
     transform: scale(0);
+
   }
   .ball {
     transform: scale(0);
     transition: 0.5s all ease;
+    cursor: pointer;
+    overflow: hidden;
   }
   .tab-pane.fade.show.active .ball {
     transform: scale(1);
@@ -598,10 +601,6 @@ ul li{
     color: var(--bs-nav-pills-link-active-color);
     background-color: transparent;
   }
-  
-/* end Unveil New Creative  */
-
-/* start new-creative */
   .new-creative span{
     font-size: 3.4375rem;
     font-weight: 800;
@@ -609,4 +608,36 @@ ul li{
    
   }
 
-  /* end new-creative */
+  .ball-img{
+    transition: 0.5s all ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+  }
+  
+/* end Unveil New Creative  */
+
+/* start slider-balls section */
+.sliderBalls{
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.close-sliderBalls i {
+    cursor: pointer;
+}
+.arrow-right{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    cursor: pointer;
+}
+.arrow-left{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    cursor: pointer;
+}
+/* start slider-balls section */
+
+
+

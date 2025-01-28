@@ -2,7 +2,27 @@ const navbar = document.querySelector("nav.navbar");
 const navLinks = document.querySelectorAll("a.nav-link");
 const btnScrollTop = document.querySelector("#ScrollTop");
 const sideBarLinks = document.querySelectorAll(".sidebar-link");
+const ballImgs = document.querySelectorAll(".ball-img");
+const sliderBalls = document.querySelector(".sliderBalls");
+const imgSliderBalls = document.querySelector(".img-sliderBalls");
+const closeSliderBalls = document.querySelector(".close-sliderBalls i");
+const arrowRight = document.querySelector(".arrow-right");
+const arrowLeft = document.querySelector(".arrow-left");
 
+const arrImgSrc = [
+  "imgs/Gallery-1.png",
+  "imgs/Gallery-2.png",
+  "imgs/Gallery-3.png",
+  "imgs/Gallery-4.png",
+  "imgs/Gallery-5.png",
+  "imgs/Gallery-6.png",
+  "imgs/Gallery-7.png",
+  "imgs/Gallery-8.png",
+  "imgs/Gallery-9.png",
+  "imgs/Gallery-10.png",
+  "imgs/Gallery-11.png",
+  "imgs/Gallery-12.png",
+];
 // get the current page path
 const currentPage = window.location.pathname;
 /**
@@ -77,4 +97,38 @@ btnScrollTop.addEventListener("click", function () {
     top: 0,
     behavior: "smooth",
   });
+});
+
+ballImgs.forEach((ballImg) => {
+  ballImg.addEventListener("click", function () {
+    sliderBalls.classList.remove("d-none");
+    imgSliderBalls.setAttribute("src", ballImg.getAttribute("src"));
+  });
+});
+
+closeSliderBalls.addEventListener("click", function () {
+  sliderBalls.classList.add("d-none");
+});
+
+let imgIndex = 0;
+
+arrowRight.addEventListener("click", function () {
+
+  imgIndex = arrImgSrc.indexOf(imgSliderBalls.getAttribute("src"));
+  imgIndex = (imgIndex + 1) ;
+  if(imgIndex >= arrImgSrc.length){
+    imgIndex = 0;
+  }
+  imgSliderBalls.setAttribute("src", arrImgSrc[imgIndex]);
+});
+
+arrowLeft.addEventListener("click", function () {
+
+  imgIndex = arrImgSrc.indexOf(imgSliderBalls.getAttribute("src"));
+  imgIndex = (imgIndex - 1);
+  if(imgIndex < 0){
+    imgIndex = arrImgSrc.length - 1;
+  }
+
+  imgSliderBalls.setAttribute("src", arrImgSrc[imgIndex]);
 });
