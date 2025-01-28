@@ -89,6 +89,11 @@ nav.navbar{
     background-color: rgba(5, 5, 30, 0.43) !important;
     border-bottom: 1px solid #1A243D;
     transition: 0.5s padding ease;
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    z-index: 555;
 }
 
 .navbar-brand{
@@ -621,6 +626,7 @@ ul li{
 .sliderBalls{
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
 }
 .close-sliderBalls i {
     cursor: pointer;
