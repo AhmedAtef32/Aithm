@@ -44,6 +44,7 @@ if (currentPage === "/" || currentPage === "/Aithm/") {
   navLinks[0].classList.add("active");
 }
 
+
 /**
  * remove active class from all nav items
  * add active class to the clicked nav item
@@ -113,20 +114,18 @@ closeSliderBalls.addEventListener("click", function () {
 let imgIndex = 0;
 
 arrowRight.addEventListener("click", function () {
-
   imgIndex = arrImgSrc.indexOf(imgSliderBalls.getAttribute("src"));
-  imgIndex = (imgIndex + 1) ;
-  if(imgIndex >= arrImgSrc.length){
+  imgIndex = imgIndex + 1;
+  if (imgIndex >= arrImgSrc.length) {
     imgIndex = 0;
   }
   imgSliderBalls.setAttribute("src", arrImgSrc[imgIndex]);
 });
 
 arrowLeft.addEventListener("click", function () {
-
   imgIndex = arrImgSrc.indexOf(imgSliderBalls.getAttribute("src"));
-  imgIndex = (imgIndex - 1);
-  if(imgIndex < 0){
+  imgIndex = imgIndex - 1;
+  if (imgIndex < 0) {
     imgIndex = arrImgSrc.length - 1;
   }
 
