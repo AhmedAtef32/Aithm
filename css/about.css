@@ -42,3 +42,50 @@
         }
     }
 /* end What-ai-do section */
+
+
+
+
+/* start Get Images of from   */
+
+.Get-Images{
+    height: 100%;
+    background-image: url("../images/pricing-image-2.png");
+    background-position: center;
+    background-size: cover;
+    
+    transition: background-image 0.5S ease ;
+    }
+    .Get-Images:hover{
+        background-image: url("../images/pricing-image-3.png");
+    }
+    
+    p{
+        font-size: 1.0625rem;
+        font-weight: 400;
+        color: #b9b9ba;
+        line-height: 1.9375rem;
+    }
+    
+    
+    
+  
+    .simple-process{
+  font-size: 3.125rem;
+  font-weight: 700;
+    }
+    .number{
+     
+      top: -5px;
+      right: 61px;
+      font-size: 46px;
+      color: #43a5fe;
+      font-weight: 500;
+  }
+  .color-get-imges{
+    color: #B3B3B4;
+  }
+    .porder-process-info{
+      border-bottom: 1px #1A243D solid;
+    }
+    /* end Get Images of from  */
