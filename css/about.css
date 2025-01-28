@@ -50,14 +50,14 @@
 
 .Get-Images{
     height: 100%;
-    background-image: url("../images/pricing-image-2.png");
+    background-image: url("../imgs/pricing-image-2.png");
     background-position: center;
     background-size: cover;
     
     transition: background-image 0.5S ease ;
     }
     .Get-Images:hover{
-        background-image: url("../images/pricing-image-3.png");
+        background-image: url("../imgs/pricing-image-3.png");
     }
     
     p{
