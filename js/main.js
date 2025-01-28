@@ -44,6 +44,7 @@ if (currentPage === "/" || currentPage === "/Aithm/") {
   navLinks[0].classList.add("active");
 }
 
+
 /**
  * remove active class from all nav items
  * add active class to the clicked nav item
