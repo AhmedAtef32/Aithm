@@ -72,6 +72,8 @@ if (currentPage === "/" || currentPage === "/Aithm/") {
     link.classList.remove("active");
   });
   sideBarLinks[0].classList.add("active");
+
+  
 }
 
 /**
