@@ -131,3 +131,13 @@ arrowLeft.addEventListener("click", function () {
 
   imgSliderBalls.setAttribute("src", arrImgSrc[imgIndex]);
 });
+
+
+  /* start MeetAi section */
+  const customCursor = document.querySelector('.custom-cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    customCursor.style.top = `${e.clientY}px`;
+    customCursor.style.left = `${e.clientX}px`;
+  });
+  /* End MeetAi section */

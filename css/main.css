@@ -4,7 +4,19 @@
 body{
     background-color: #05051E;
     font-family: "DM Sans", serif;
-
+    color:#fff
+}
+.fs-7{
+    font-size: 18px;
+}
+.w-45{
+    width: 45%;
+}
+.w-95{
+    width: 95%;
+}
+.h1{
+    font-size: 50px;
 }
 .DM_Sans_font{
     font-family: "DM Sans", serif;
@@ -646,4 +658,247 @@ ul li{
 /* start slider-balls section */
 
 
+  /* start testimonialCrousel section */
+  .testimonialCrousel{
+    background-image: url(../imgs/background-8.png);
+    background-position: center;
+    background-size: cover;
+    /* height: 440px; */
+    margin-block:100px;
+}
 
+.testimonial__arousel{
+    background: rgb(214 140 255 / 8%);
+    backdrop-filter: blur(3.5px);
+}
+.img_slide img{
+    position: relative;
+}
+.icon_Box{
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    z-index: 22;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  /* End testimonialCrousel section */
+
+  /* start pricing section  */
+  .pricing{
+    background-image: url(../imgs/background-9.png);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    color: white;
+}
+.CardOne-pricing{
+    /* margin-right: 2px; */
+    border:#1EB398 solid 2px;
+    background-color:rgba(30, 179, 152, 0.208) ;
+    backdrop-filter: blur(3.5px);
+    height: 520px;
+}
+.Card-pricing{
+    background: rgb(214 140 255 / 8%);
+    border:#1EB398 solid 2px;
+    backdrop-filter: blur(3.5px);
+    height: 520px;
+}
+.btn_popular{
+background-color: #1EB398;
+}
+.title_pricing{
+    font-size: 60px;
+    font-weight: bold;
+}
+  /* End pricing section  */
+
+
+  /* start Latest Blogs section  */
+
+  .title_blog{
+    text-decoration: none;
+    transition: all .5s ease-in;
+}
+
+.title_blog:hover{
+    color: #43A5FE;
+}
+.meta_info{
+    background-color:  #05051e75;
+    backdrop-filter: blur(6.5px);
+    right: 0;
+    bottom: 5%;
+}
+.btn_link{
+    transition: all .5s ease-in;
+}
+.btn_link:hover{
+    color: #43A5FE;
+    text-decoration: none;
+}
+  /* End Latest Blogs section  */
+
+
+
+  /* start MeetAi section */
+
+  .meet_info{
+    background-image: url(../imgs/ft-shape.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.icon_meet li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a243d;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+}
+.icon_meet li:hover{
+    background: linear-gradient(94deg, #43A5FE 21.18%, #0064C1 104.4%);
+}
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.182);
+    backdrop-filter: blur(6.5px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+  }
+
+  .hover-image {
+    cursor: none;
+    transition: all  3s ease-in;
+  }
+  .hover-image:hover{
+    transform: scale(1.5);
+  }
+  .hover-image:hover ~ .custom-cursor {
+    opacity: 1;
+  }
+  /* End MeetAi section */
+
+  /*start footer section */
+  .footer{
+    position: relative;
+    border-bottom:1px solid #43A5FE;
+}
+.list_footer ul li a {
+    color: #fff;
+    transition: all .2s ease;
+    font-weight:500;
+  }
+.list_footer ul li a:hover {
+    color: #43A5FE;
+  }
+  
+.footer::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: radial-gradient(circle, #43A5FE 0%, transparent 70%);
+    animation: leftToRight 30s linear infinite alternate;
+    z-index: 1;
+    pointer-events: none;
+    bottom: 0;
+}
+.info_footer{
+    position: relative;
+    border-right:.1px solid #43A5FE;
+}
+.info_footer::before{
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    width: 4px;
+    height: 100px;
+    background: radial-gradient(circle, #43A5FE 0%, transparent 70%);
+    animation: topToBottom 20s linear infinite alternate;
+    z-index: 1;
+    pointer-events: none;
+    top: 20px;
+    right: -1px;
+}
+.Subscribe-btn{
+    background: linear-gradient(94deg, #43A5FE 21.18%, #0064C1 104.4%);
+}
+
+@keyframes leftToRight{
+    
+    0% {
+        inset-inline-start: 0;
+    }
+    50% {
+        inset-inline-start: 100%;
+        transform: translateX(-100%);
+    }
+    100% {
+        inset-inline-start: 0;
+    } 
+}
+
+@keyframes topToBottom {
+    0% {
+        inset-block-start: 0;
+    }
+    
+    50% {
+        inset-block-start: 100%;
+        transform: translateY(-100%);
+    }
+    100% {
+        inset-block-start: 0;
+    }
+    
+}
+@media screen and (max-width: 992px){
+
+    .meta_info{
+        left: 30%;
+    }
+    
+}
+@media (max-width:1399px) {
+    .icon_Box{
+        position: absolute;
+        bottom: -100%;
+        right: 0px;
+        z-index: 22;
+        background-color: black;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_slide{
+        position: relative;
+    }
+}
+/* End footer section */
