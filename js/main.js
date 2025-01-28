@@ -49,7 +49,7 @@ if (currentPage === "/" || currentPage === "/Aithm/") {
 
 
 // start carousel-two section 
-const sliderm = new Sliderm('#exampe-slider', {
+const sliderm = new Sliderm('#testimonialCrousel', {
     arrow: false,
     pagination: true,
     grouping: false,
