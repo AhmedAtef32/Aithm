@@ -4,20 +4,7 @@
 body{
     background-color: #05051E;
     font-family: "DM Sans", serif;
-    color: #fff;
 
-}
-.fs-7{
-    font-size: 18px;
-}
-.w-45{
-    width: 45%;
-}
-.w-95{
-    width: 95%;
-}
-.h1{
-    font-size: 50px;
 }
 .DM_Sans_font{
     font-family: "DM Sans", serif;
@@ -326,13 +313,7 @@ h1{
      }
  }
 
-/* start hero section */
-
-
-
-
-
-
+/* end hero section */
 
 
 /* start aiFuture section  */

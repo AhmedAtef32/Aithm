@@ -9,7 +9,6 @@ const closeSliderBalls = document.querySelector(".close-sliderBalls i");
 const arrowRight = document.querySelector(".arrow-right");
 const arrowLeft = document.querySelector(".arrow-left");
 
-
 const arrImgSrc = [
   "imgs/Gallery-1.png",
   "imgs/Gallery-2.png",
@@ -45,17 +44,6 @@ if (currentPage === "/" || currentPage === "/Aithm/") {
   navLinks[0].classList.add("active");
 }
 
-
-  
-
-  
-  const customCursor = document.querySelector('.custom-cursor');
-
-  document.addEventListener('mousemove', (e) => {
-    customCursor.style.top = `${e.clientY}px`;
-    customCursor.style.left = `${e.clientX}px`;
-  });
-
 /**
  * remove active class from all nav items
  * add active class to the clicked nav item
@@ -72,8 +60,6 @@ if (currentPage === "/" || currentPage === "/Aithm/") {
     link.classList.remove("active");
   });
   sideBarLinks[0].classList.add("active");
-
-  
 }
 
 /**
@@ -127,20 +113,18 @@ closeSliderBalls.addEventListener("click", function () {
 let imgIndex = 0;
 
 arrowRight.addEventListener("click", function () {
-
   imgIndex = arrImgSrc.indexOf(imgSliderBalls.getAttribute("src"));
-  imgIndex = (imgIndex + 1) ;
-  if(imgIndex >= arrImgSrc.length){
+  imgIndex = imgIndex + 1;
+  if (imgIndex >= arrImgSrc.length) {
     imgIndex = 0;
   }
   imgSliderBalls.setAttribute("src", arrImgSrc[imgIndex]);
 });
 
 arrowLeft.addEventListener("click", function () {
-
   imgIndex = arrImgSrc.indexOf(imgSliderBalls.getAttribute("src"));
-  imgIndex = (imgIndex - 1);
-  if(imgIndex < 0){
+  imgIndex = imgIndex - 1;
+  if (imgIndex < 0) {
     imgIndex = arrImgSrc.length - 1;
   }
 
