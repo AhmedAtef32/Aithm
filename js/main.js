@@ -45,25 +45,9 @@ if (currentPage === "/" || currentPage === "/Aithm/") {
   navLinks[0].classList.add("active");
 }
 
-// new Splide( '.splide' ).mount();
 
-
-// start carousel-two section 
-const sliderm = new Sliderm('#testimonialCrousel', {
-    arrow: false,
-    pagination: true,
-    grouping: false,
-    loop: false,
-    preview: false,
-    columns: 2,
-    duration: 1000,
-    spacing: 0,
-    align: 'center',
-  });
 
   
-
-  // End carousel-two section 
 
   
   const customCursor = document.querySelector('.custom-cursor');
