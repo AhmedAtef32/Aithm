@@ -9,6 +9,7 @@ const closeSliderBalls = document.querySelector(".close-sliderBalls i");
 const arrowRight = document.querySelector(".arrow-right");
 const arrowLeft = document.querySelector(".arrow-left");
 
+
 const arrImgSrc = [
   "imgs/Gallery-1.png",
   "imgs/Gallery-2.png",
@@ -43,6 +44,18 @@ if (currentPage === "/" || currentPage === "/Aithm/") {
   });
   navLinks[0].classList.add("active");
 }
+
+
+
+  
+
+  
+  const customCursor = document.querySelector('.custom-cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    customCursor.style.top = `${e.clientY}px`;
+    customCursor.style.left = `${e.clientX}px`;
+  });
 
 /**
  * remove active class from all nav items
