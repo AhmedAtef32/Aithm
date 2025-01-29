@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
 
+  <!-- icon link  -->
+   <link rel="icon" href="imgs/ai.png">
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +26,12 @@
   <link rel="stylesheet" href="css/all.min.css">
   <!-- slider link  -->
   <link rel="stylesheet" href="https://sliderm.com/dist/1.0.8/sliderm.css">
+  <!-- aos link  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- animate link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
 
 </head>
 
@@ -142,11 +150,12 @@
     <div class="container">
 
       <header class="text-center mb-5">
-        <p class="head-of-every-section DM_Sans_font"><span class="position-relative">Aithm Image Generator</span></p>
+        <p class="head-of-every-section DM_Sans_font animate__animated animate__bounce"><span
+            class="position-relative">Aithm Image Generator</span></p>
       </header>
       <h1 class="text-center Plus_Jakarta_font mb-4">Create beautiful art with <br><span id="element"></span></h1>
 
-      <div class="Generate d-flex justify-content-center mt-2">
+      <div class="Generate d-flex justify-content-center mt-2 ">
         <div class="Generate-input-container">
           <input class="Generate-input rounded-2" type="text"
             placeholder="Write your prompt and get you best ai artwork!">
@@ -178,7 +187,7 @@
     <div class="container">
       <div class="row gy-3">
 
-        <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out" data-aos-duration="1000">
           <div class="card-ai p-4 position-relative">
 
             <div class="card-ai-title">
@@ -197,7 +206,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out" data-aos-duration="1500">
           <div class="card-ai p-4 position-relative">
 
             <div class="card-ai-title">
@@ -217,7 +226,7 @@
         </div>
 
 
-        <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out" data-aos-duration="2000">
           <div class="card-ai p-4 position-relative">
 
             <div class="card-ai-title">
@@ -237,7 +246,7 @@
         </div>
 
 
-        <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out" data-aos-duration="2500">
           <div class="card-ai p-4 position-relative">
 
             <div class="card-ai-title">
@@ -263,7 +272,7 @@
   </section>
 
   <!-- end aiFuture section  -->
-   
+
   <!-- ===================================================================================================== -->
 
   <!-- start What-ai-do section  -->
@@ -272,7 +281,7 @@
       <div class="row gy-3">
 
 
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
           <div class="img-ai-do w-100 h-100">
 
           </div>
@@ -281,19 +290,23 @@
         <div class="col-md-6">
           <div class="card-what-ai-do ps-md-5 mt-5">
 
-            <header>
-              <p class="head-of-every-section DM_Sans_font"><span class="position-relative">What Aithm Do</span></p>
-            </header>
 
-            <h2 class="Plus_Jakarta_font py-4">Create your own AI business easily.</h2>
 
-            <p class="pb-4">AI systems can analyze data, recognize patterns, make decisions, and even adapt and improve
-              over time. Whether it's speech recognition, image processing, or problem solving.</p>
+            <div data-aos="fade-left" data-aos-duration="2000">
+              <header>
+                <p class="head-of-every-section DM_Sans_font"><span class="position-relative">What Aithm Do</span></p>
+              </header>
+              <h2 class="Plus_Jakarta_font py-4">Create your own AI business easily.</h2>
 
-            <ul class="list-unstyled">
-              <li><i class="fa-solid fa-check pe-3 pb-3"></i>Natural Language Processing</li>
-              <li><i class="fa-solid fa-check pe-3 pb-3"></i>AI refers to the simulation of human</li>
-              <li><i class="fa-solid fa-check pe-3 pb-3"></i>Generating art, music, and literature.</li>
+              <p class="pb-4">AI systems can analyze data, recognize patterns, make decisions, and even adapt and
+                improve
+                over time. Whether it's speech recognition, image processing, or problem solving.</p>
+
+              <ul class="list-unstyled">
+                <li><i class="fa-solid fa-check pe-3 pb-3"></i>Natural Language Processing</li>
+                <li><i class="fa-solid fa-check pe-3 pb-3"></i>AI refers to the simulation of human</li>
+                <li><i class="fa-solid fa-check pe-3 pb-3"></i>Generating art, music, and literature.</li>
+            </div>
 
             </ul>
 
@@ -537,13 +550,15 @@
           tabindex="0">
           <div class="row gy-4">
 
-            <div class="col-lg-4 col-md-6 ">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-lg-4 col-md-6 ">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-1.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-2.png" alt="tool">
               </div>
@@ -551,7 +566,8 @@
 
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-3.png" alt="tool">
               </div>
@@ -559,40 +575,46 @@
 
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-4.png" alt="tool">
               </div>
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-5.png" alt="tool">
               </div>
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-6.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-7.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-8.png" alt="tool">
               </div>
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-9.png" alt="tool">
               </div>
@@ -600,20 +622,23 @@
 
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-10.png" alt="tool">
               </div>
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-11.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-12.png" alt="tool">
               </div>
@@ -629,7 +654,8 @@
 
           <div class="row gy-4">
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-3.png" alt="tool">
               </div>
@@ -638,27 +664,31 @@
 
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-6.png" alt="tool">
               </div>
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-8.png" alt="tool">
               </div>
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-2.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-9.png" alt="tool">
               </div>
@@ -674,26 +704,30 @@
 
           <div class="row gy-4">
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-9.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-4.png" alt="tool">
               </div>
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-2.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-12.png" alt="tool">
               </div>
@@ -706,7 +740,8 @@
 
           <div class="row gy-4">
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-1.png" alt="tool">
               </div>
@@ -716,26 +751,30 @@
 
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-9.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-6.png" alt="tool">
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-11.png" alt="tool">
               </div>
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+              class="col-md-6 col-lg-4">
               <div class="ball position-relative">
                 <img class="img-fluid ball-img" src="imgs/Gallery-5.png" alt="tool">
               </div>
@@ -773,7 +812,7 @@
 
   <section class="testimonialCrousel">
     <div class="container">
-      <div id="testimonialCrousel" class="sliderm py-5 ">
+      <div id="testimonial-Crousel" class="sliderm py-5 ">
         <div class="sliderm__slider mx-3 ">
           <div class="sliderm__slides d-flex flex-row gap-5">
             <div class="row sliderm__slide testimonial__arousel rounded-4 align-items-center ">
@@ -831,7 +870,7 @@
   <section class="pricing py-5 my-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <video class="w-95" autoplay muted loop>
             <source src="./imgs/video-2.mp4" type="video/mp4">
           </video>
@@ -843,7 +882,8 @@
               and improve over time.</p>
           </div>
           <div class="row d-flex justify-content-center column-gap-md-5 w-100 h-100">
-            <div class="CardOne-pricing col-12 col-md-5 px-4 rounded-3 d-flex flex-column justify-content-between">
+            <div class="CardOne-pricing col-12 col-md-5 px-4 rounded-3 d-flex flex-column justify-content-between"
+              data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <span class="btn_popular  py-1 rounded-2 align-self-end my-3">
                 <p class="my-0 px-3">MOST POPULAR</p>
               </span>
@@ -863,7 +903,8 @@
               </button>
 
             </div>
-            <div class="Card-pricing  col-12 col-md-5 px-4 rounded-3 d-flex flex-column justify-content-between">
+            <div class="Card-pricing  col-12 col-md-5 px-4 rounded-3 d-flex flex-column justify-content-between"
+              data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <span class="btn_popular  py-1 rounded-2 align-self-end my-3">
                 <p class="my-0 px-3">MOST POPULAR</p>
               </span>
@@ -1098,6 +1139,9 @@
   <script src="js/main.js"></script>
   <!-- typing animation  -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- aos animation  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!--start Setup and start animation! -->
   <script>
     var typed = new Typed('#element', {
@@ -1107,6 +1151,7 @@
       backSpeed: 30,
       loop: true
     });
+    AOS.init();
   </script>
   <!--end Setup and start animation! -->
 
@@ -1124,6 +1169,10 @@
       spacing: 50,
       align: 'center',
       autoplay: true,
+      _autoplay: {
+        direction: 'left',
+        duration: 4000,
+      },
     });
   </script>
 
@@ -1140,20 +1189,27 @@
       duration: 1000,
       spacing: 10,
       autoplay: true,
-      align: 'center',
+      align: 'center', 
+      _autoplay: {
+        direction: 'right',
+        duration: 4000,
+      },
+
     });
-    // start section testimonialCrousel
-    const slide = new Sliderm('#testimonialCrousel', {
+
+
+    const slide = new Sliderm('#testimonial-Crousel', {
       arrow: false,
       pagination: true,
       grouping: false,
-      loop: false,
+      loop: true,
       preview: false,
       columns: 2,
       duration: 1000,
-      spacing: 0,
-      align: 'center',
+      spacing: 10,
+      align: 'center'
     });
+
   </script>
 
   <!-- Slider library  -->
