@@ -1,4 +1,154 @@
  /* =============== start Ahmed===================== */
+/* start hero section */
+.Content-page-sec-one{
+    height: 70vh;
+    background-image: url("../imgs/section-bg-9.png");
+    background-size: cover;
+    background-position: center;
+    padding-block:80px 50px;
+}
+.Content-page-sec-one-content{
+    height: 50vh;
+}
+.Content-page-sec-one-content h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+}
+.Content-page-sec-one-content p , .Content-page-sec-one-content p a{
+    font-size: 1rem;
+    color: white;
+}
+.Content-page-sec-one-content p:last-child{
+    font-size: 1rem;
+    color: #43a5fe;
+}
+/* end hero section  */
+
+/* start content us section*/
+
+.start-working-header{
+    font-weight: 700;
+    font-size: 3.4375rem;
+    line-height: 4.125rem;
+}
+
+.start-working-para{
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    color: #b9b9ba;
+}
+
+.card-content-us{
+    border: 1px solid #1a243d;
+        padding-block: 3.125rem;
+    padding-inline: 30px;
+    transition: border 0.8s;
+   
+    &:hover{
+    border: 1px solid #43a5fe;
+    }
+    h6{
+        font-weight: 500;
+        font-size: 1rem;
+        color: #43a5fe;
+    }
+    a{
+        font-weight: 500;
+        font-size: 1.3rem;
+        color: #43a5fe;
+    }
+}
+@media screen and (min-width: 768px) {
+    .card-content-us{
+    aspect-ratio: 8/8;
+
+    }
+}
+.countent-us-form{
+    background-color: #151526;
+}
+.input input {
+    border-bottom: 1px solid #1a243d !important;
+        padding-block: 0.625rem;
+    padding-inline: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-block: 1rem;
+    font-size: 1rem;
+    color: white;
+    transition: 0.5s ease;
+    &::placeholder{
+        color: #b9b9ba;
+    }
+    &:focus{
+        border: none;
+        box-shadow: none;
+    color: white;
+    border-bottom: 1px solid #43a5fe !important;
+
+
+    }
+}
+.input textarea{
+    border-bottom: 1px solid #1a243d !important;
+    padding-block: 0.625rem;
+padding-inline: 1rem;
+border-radius: 5px;
+width: 100%;
+margin-block: 1rem;
+font-size: 1rem;
+color: white;
+transition: 0.5s ease;
+&::placeholder{
+    color: #b9b9ba;
+}
+&:focus{
+    border: none;
+    box-shadow: none;
+color: white;
+border-bottom: 1px solid #43a5fe !important;
+}
+}
+.nav-Generate-button.Send{
+    width: 50%;
+    i{
+        right: -30px;
+    }
+    &:hover i{
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-Generate-button.Send{
+        width: 30%;
+}
+}
+
+.about-video video{
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;}
+
+    @media screen and (min-width: 768px) {
+        .about-video video{
+            position: absolute;
+           top: 0;
+              left: 0;
+        }
+    }
+/* end content us section*/
+
+/* start map-content section */ 
+.map-content{
+  height: 80vh;
+  filter: grayscale(100%);
+}
+/* end map-content section  */
+
 
  /* =============== end Ahmed===================== */
 
