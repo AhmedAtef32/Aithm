@@ -1,3 +1,11 @@
+ /* global style */
+ h3{
+    font-size: 55px;
+    font-weight: 700;
+ }
+ .w-45{
+    width: 45%;
+ }
  /* =============== start Ahmed===================== */
 /* start hero section */
 .Services-page-sec-one{
@@ -34,9 +42,27 @@
 
 
   /* =============== start Menna===================== */
-  
+  /* start style section services_ai */
+  .item_service img{
+    transition: all .3s ease;
+  }
+  .item_service:hover img{
+    transform: scale(1.1);
+  }
+  .item_service:hover .content_service{
+    transform: translateX(20px);
+    background-color: #05051E;
+    color: #43a5fe;
+  }
 
-
+.content_service{
+    bottom:30px;
+    left: 20px;
+    backdrop-filter: blur(6.5px);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+  /* End style section services_ai */
 
 
 
