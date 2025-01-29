@@ -89,3 +89,16 @@
       border-bottom: 1px #1A243D solid;
     }
     /* end Get Images of from  */
+
+
+    /* <!-- start video-img of from   --> */
+.imgs-vide{
+    background-image: url(../imgs/video-bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 90vh; 
+  
+  } 
+  
+  /* <!-- end video-img of from   --> */
