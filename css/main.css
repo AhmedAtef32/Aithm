@@ -807,6 +807,10 @@ background-color: #1EB398;
     position: relative;
     border-bottom:1px solid #43A5FE;
 }
+.footer input{
+   outline: none;
+   font-size: 17px;
+}
 .list_footer ul li a {
     color: #fff;
     transition: all .2s ease;
