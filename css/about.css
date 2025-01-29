@@ -102,3 +102,29 @@
   } 
   
   /* <!-- end video-img of from   --> */
+
+
+  /* start project card section */
+.project-card-icon{
+    inset: 0;
+    background-color: #16171a7a;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.project-card-icon i{
+    font-size: 1.5625rem;
+    color: white;
+    position: relative;
+    top: -20px;
+    transition: top 0.5s ease;
+}
+.project-card-img:hover {
+    .project-card-icon{
+        opacity: 1;
+    }
+
+    .project-card-icon i{
+        top: 0;
+    }
+}
+/* end project card section */

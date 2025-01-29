@@ -317,6 +317,130 @@
 <!-- end video-img of from   -->
 
 
+  <!-- start testimonialCrousel section  -->
+
+  <section class="testimonialCrousel">
+    <div class="container">
+      <div id="testimonialCrousel" class="sliderm py-5 ">
+        <div class="sliderm__slider mx-3 ">
+          <div class="sliderm__slides d-flex flex-row gap-5">
+            <div class="row sliderm__slide testimonial__arousel rounded-4 align-items-center ">
+              <div class="col-12 col-xxl-6  d-flex flex-column  slider__title px-5 h-100 text-white">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, temporibus atque in, veniam placeat
+                  nisi, voluptatibus aspernatur dolor dolorum culpa a illum debitis deleniti iusto praesentium sint.
+                  Maiores, repudiandae beatae.</p>
+                <div>
+                  <h4>James Land</h4>
+                  <span>Web Expert</span>
+                  <span class="icon_Box"><i class="bx bxs-quote-left" style="font-size: 24px; "></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-xxl-6  img_slide  p-0"><img src="./imgs/testimonial-1.png" /></div>
+            </div>
+            <div class="row sliderm__slide testimonial__arousel rounded-4 align-items-center ">
+              <div class="col-12 col-xxl-6  d-flex flex-column  slider__title px-5 h-100 text-white">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, temporibus atque in, veniam placeat
+                  nisi, voluptatibus aspernatur dolor dolorum culpa a illum debitis deleniti iusto praesentium sint.
+                  Maiores, repudiandae beatae.</p>
+                <div>
+                  <h4>James Land</h4>
+                  <span>Web Expert</span>
+                  <span class="icon_Box"><i class="bx bxs-quote-left" style="font-size: 24px; "></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-xxl-6  img_slide  p-0"><img src="./imgs/testimonial-2.png" /></div>
+            </div>
+            <div class="row sliderm__slide testimonial__arousel rounded-4 align-items-center ">
+              <div class="col-12 col-xxl-6  d-flex flex-column  slider__title px-5 h-100 text-white">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, temporibus atque in, veniam placeat
+                  nisi, voluptatibus aspernatur dolor dolorum culpa a illum debitis deleniti iusto praesentium sint.
+                  Maiores, repudiandae beatae.</p>
+                <div>
+                  <h4>James Land</h4>
+                  <span>Web Expert</span>
+                  <span class="icon_Box"><i class="bx bxs-quote-left" style="font-size: 24px; "></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-xxl-6  img_slide  p-0"><img src="./imgs/testimonial-3.png" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End carousel-two section  -->
+
+
+<!-- start portfolio projects section  -->
+
+<section class="portfolio-cards py-5">
+  <div class="container">
+      <div class="row gy-4">
+
+     <div class="col-md-4 col-lg-2">
+      <div class="project-card-img position-relative">
+          <img class="img-fluid" src="imgs/insta-1.png" alt="insta-1">
+          <div class="project-card-icon position-absolute d-flex align-items-center justify-content-center h-100 ">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+     </div>
+
+
+     <div class="col-md-4 col-lg-2">
+      <div class="project-card-img position-relative">
+          <img class="img-fluid" src="imgs/insta-2.png" alt="insta-2">
+          <div class="project-card-icon position-absolute d-flex align-items-center justify-content-center h-100 ">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+     </div>
+
+
+     <div class="col-md-4 col-lg-2">
+      <div class="project-card-img position-relative">
+          <img class="img-fluid" src="imgs/insta-3.png" alt="insta-3">
+          <div class="project-card-icon position-absolute d-flex align-items-center justify-content-center h-100 ">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-4 col-lg-2">
+      <div class="project-card-img position-relative">
+          <img class="img-fluid" src="imgs/insta-4.png" alt="insta-4">
+          <div class="project-card-icon position-absolute d-flex align-items-center justify-content-center h-100 ">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+     </div>
+
+
+     <div class="col-md-4 col-lg-2">
+      <div class="project-card-img position-relative">
+          <img class="img-fluid" src="imgs/insta-5.png" alt="insta-5">
+          <div class="project-card-icon position-absolute d-flex align-items-center justify-content-center h-100 ">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-4 col-lg-2">
+      <div class="project-card-img position-relative">
+          <img class="img-fluid" src="imgs/insta-6.png" alt="insta-6">
+          <div class="project-card-icon position-absolute d-flex align-items-center justify-content-center h-100 ">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+     </div>
+
+
+      </div>
+  </div>
+</section>
+
+
+<!-- end portfolio projects section  -->
 
 
 
@@ -424,7 +548,21 @@
       align: 'center',
       autoplay: true,
     });
+
+      // start section testimonialCrousel
+  const slide = new Sliderm('#testimonialCrousel', {
+    arrow: false,
+    pagination: true,
+    grouping: false,
+    loop: false,
+    preview: false,
+    columns: 2,
+    duration: 1000,
+    spacing: 0,
+    align: 'center',
+  });
   </script>
+
 
 </body>
 
