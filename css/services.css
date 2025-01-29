@@ -37,6 +37,55 @@
 
   /* =============== start Heba===================== */
 
+/* <!-- start Continuous Learning and Improvement --> */
+.Continuous-Learning  {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../imgs/section-bg-7.png");
+padding-block: 8.125rem;
+}
+
+.Continuous{
+  font-size: 3.4375rem;
+  font-weight: 700;
+  margin-top: 1.875rem;
+}
+.account-process {
+  list-style: none;
+}
+.harness{
+  color: #b9b9ba;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.9375rem;
+}
+.account-process li {
+  position: relative;
+  background-color: #1515264d;
+  padding: 20px 20px 20px 60px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: white;
+  transition: .5s;
+  border: 1px solid #1a243d;
+  backdrop-filter: blur(6.5px);
+}
+.account-process li:hover {
+  border: 1px solid #43a5fe;
+  cursor: pointer;
+}
+
+.account-process li i {
+  position: absolute;
+  top: 22px;
+  left: 17px;
+  color: #43a5fe;
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+/*  <!-- end Continuous Learning and Improvement --> */
  /* =============== end Heba===================== */
 
 
