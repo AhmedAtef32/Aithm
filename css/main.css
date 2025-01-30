@@ -517,6 +517,14 @@ ul li{
 .team-card:hover .team-opsity{
     opacity: 1;
 }
+
+.team-social a{
+    transition: 0.5s color ease;
+    color: white;
+    &:hover{
+        color: #43A5FE;
+    }
+}
 /* end team content */
 
 
